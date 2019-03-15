@@ -1,7 +1,7 @@
 {
   "name": "Dark PR",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "Github pull requests in dark mode",
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "background": {
     "scripts": ["js/background.js"],
