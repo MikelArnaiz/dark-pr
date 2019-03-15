@@ -2,7 +2,13 @@
   "name": "Dark PR",
   "version": "1.0",
   "description": "Github pull requests in dark mode",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "background",
+    "https://github.com/*"
+  ],
   "background": {
     "scripts": ["js/background.js"],
     "persistent": false
