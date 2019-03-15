@@ -6,12 +6,10 @@ let changeColorButton = document.getElementById("changeColor");
 changeColorButton.onclick = function() {
   chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     chrome.tabs.insertCSS(
-      (tabs[0].id, { file: "./styles/changeBackground.css" })
+      (tabs[0].id, { file: "./actions/changeBackground/changeBackground.css" })
     );
     chrome.tabs.executeScript(tabs[0].id, {
-      code: `
-        document.body.classList.toggle('dark-pr');
-      `
+      file: "./actions/changeBackground/changeBackground.js"
     });
     isActive = !isActive;
     changeColorButton.innerHTML = isActive ? "Turn off" : "Turn on";

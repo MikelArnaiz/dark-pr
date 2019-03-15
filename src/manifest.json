@@ -10,7 +10,7 @@
     "https://github.com/*"
   ],
   "background": {
-    "scripts": ["permissions/background.js"],
+    "scripts": ["actions/registerListener.js"],
     "persistent": false
   },
   "page_action": {
