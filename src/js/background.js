@@ -13,7 +13,7 @@ chrome.runtime.onInstalled.addListener(function() {
       {
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: { hostEquals: "developer.chrome.com" }
+            pageUrl: { urlMatches: "github.com/.+/.+/pull/.+/files" }
           })
         ],
         actions: [new chrome.declarativeContent.ShowPageAction()]
