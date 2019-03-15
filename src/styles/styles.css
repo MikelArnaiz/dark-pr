@@ -1,7 +1,7 @@
-body {
-  background-color: green !important;
+body.dark-pr .blob-code-addition .x {
+  background-color: #568962 !important;
 }
 
-.blob-code-addition .x {
-  background-color: red !important;
+body.dark-pr .blob-code-deletion .x {
+  background-color: #8c4e55 !important;
 }
